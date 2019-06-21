@@ -14,12 +14,12 @@ ffmpeg -i /path/to/my/video.mp4 /path/to/output/video-frame-%d.png
 
 + Deepfakes检测
 ```shell
-curl "http://127.0.0.1/rest/deepfakes/v1/detect?access_token=123456789" --header "Host: cdcself" -F "file=@fake_deepfakes.jpg"
+curl "http://api-cdc.baidu.com/rest/deepfakes/v1/detect?access_token=123456789" --header "Host: cdcself" -F "file=@fake_deepfakes.jpg"
 ```
 
 + 人脸融合检测
 ```shell
-curl "http://127.0.0.1/rest/facemerge/v1/detect?access_token=123456789" --header "Host: cdcself" -F "file=@fake_merging.jpg"
+curl "http://api-cdc.baidu.com/rest/facemerge/v1/detect?access_token=123456789" --header "Host: cdcself" -F "file=@fake_facemerge.jpg"
 ```
 
 # 接口描述
